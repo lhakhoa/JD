@@ -29,5 +29,5 @@ jobs:
         run: |
           git config user.name "jobs-bot"
           git config user.email "jobs-bot@users.noreply.github.com"
-          git add jobs/
+          git add JD/
           git diff --cached --quiet || (git commit -m "add job from Telegram" && git push)
