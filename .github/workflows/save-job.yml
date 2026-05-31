@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - run: pip install python-jobspy
+      - run: pip install lxml beautifulsoup4
 
       - name: Scrape single URL & write markdown
         env:
