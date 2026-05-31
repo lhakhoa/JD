@@ -38,7 +38,7 @@ def main():
     title_slug = slugify(job["title"]) or "unknown-role"
     today = date.today().isoformat()
 
-    folder = Path("jobs") / company_slug
+    folder = Path("JD") / company_slug
     folder.mkdir(parents=True, exist_ok=True)
     fp = folder / f"{today}_{title_slug}.md"
 
